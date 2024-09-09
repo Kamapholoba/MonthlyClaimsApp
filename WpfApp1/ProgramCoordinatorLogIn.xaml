@@ -1,0 +1,65 @@
+﻿<Window x:Class="WpfApp1.ProgramCoordinatorLogIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="ProgramCoordinatorLogIn" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFDA9999" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <TextBlock Text="Program Coordinator Log In" FontSize="25" Foreground='AntiqueWhite'/>
+
+        <TextBlock Text="Email" Width="110" Height="40" HorizontalAlignment="Left"
+                  VerticalAlignment="Center" FontSize="20"/>
+
+        <TextBox x:Name="EmailTxtBlock1" Width="160" Height="40" HorizontalAlignment="Center"
+                  VerticalAlignment="Center">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFFCECE" Offset="1"/>
+                    <GradientStop Color="#FFE7D2D2" Offset="0.481"/>
+                    <GradientStop Color="#FF5F4E4E" Offset="0.237"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+
+        </TextBox>
+
+        <TextBlock Text="Password" Width="110" Height="40" HorizontalAlignment="Left"
+                  VerticalAlignment="Bottom" FontSize="20"/>
+
+        <TextBox x:Name="PasswordTxtBlock1" Width="160" Height="40" HorizontalAlignment="Center"
+          VerticalAlignment="Bottom">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFFCECE" Offset="1"/>
+                    <GradientStop Color="#FFE7D2D2" Offset="0.481"/>
+                    <GradientStop Color="#FF5F4E4E" Offset="0.237"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+
+        <Button Content="Submit" Width="160" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+               FontSize="20" Click="Button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFFCECE" Offset="0.672"/>
+                    <GradientStop Color="#FFE7D2D2" Offset="0.481"/>
+                    <GradientStop Color="#FF5F4E4E" Offset="0.237"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF5F4E4E" Offset="0.817"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
